@@ -10,8 +10,7 @@ public class duplicate_words_removal {
 
 
         String[] word_Array=str.split(" ");
-       String final_st="";
-
+String finalst="";
         for (int i = 0; i < word_Array.length ; i++)
         {
             for (int j = 0; j < word_Array.length ; j++) {
@@ -19,15 +18,18 @@ public class duplicate_words_removal {
                 {
                     if(i!=j)
                     {
-                        word_Array[j]="";
+                       word_Array[j]="";
                     }
                 }
             }
         }
         for (int i = 0; i < word_Array.length ; i++) {
-           final_st=final_st.concat(word_Array[i]+" ");
+            if(!word_Array[i].equals(""))
+            {
+                finalst=finalst.concat(word_Array[i]+" ");
+            }
         }
+        System.out.print(finalst);
 
-        System.out.println(final_st);
     }
 }
