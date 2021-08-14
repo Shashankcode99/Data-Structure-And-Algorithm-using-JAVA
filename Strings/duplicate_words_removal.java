@@ -19,13 +19,13 @@ public class duplicate_words_removal {
                 {
                     if(i!=j)
                     {
-                        word_Array[i]="";
+                        word_Array[j]="";
                     }
                 }
             }
         }
         for (int i = 0; i < word_Array.length ; i++) {
-       final_st=final_st.concat(word_Array[i]+" ");
+           final_st=final_st.concat(word_Array[i]+" ");
         }
 
         System.out.println(final_st);
