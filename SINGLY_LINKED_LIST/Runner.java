@@ -14,8 +14,12 @@ public class Runner {
         list.insertAtIndex(2,99);
         list.insertAtIndex(5,999);
         list.insertAtIndex(0,9999);
-        list.deleteAtIndex(9);             //removes 20
-        list.show();
 
+        list.deleteAtIndex(3);
+        list.deleteAtStart();
+        list.delete_last();
+        list.delete_last();
+
+        list.show();
     }
 }
