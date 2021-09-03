@@ -6,30 +6,27 @@ public class Runner {
 
     public static void main(String[] args) throws NullPointerException {
         DoublyLinkedList d_list = new DoublyLinkedList();
-        d_list.insertAtEnd(100);
-        d_list.insertAtEnd(200);
+        d_list.insertAtEnd(60);
+        d_list.insertAtEnd(70);
+        d_list.insertAtEnd(80);
+        d_list.insertAtEnd(90);
 
-        d_list.insertAtStart(500);
-        d_list.insertAtStart(600);
+        d_list.insertAtStart(50);
+        d_list.insertAtStart(40);
 
-        d_list.insertAtEnd(800);
-
-        d_list.insertAtIndex(5,999);
-        d_list.insertAtIndex(2,300);
-        d_list.insertAtIndex(4,400);
-
-        d_list.show();
-
-             d_list.deleteFromIndex(0);
-             d_list.deleteFromIndex(4);
+        d_list.insertAtIndex(6,100);
 
 
         d_list.deleteFromStart();
-        d_list.deleteFromStart();
+        d_list.deleteFromEnd();
+
+        d_list.deleteAtIndex(3);
+        d_list.deleteAtIndex(0);
+        d_list.deleteAtIndex(-1);
+        d_list.deleteAtIndex(8);
 
 
-        d_list.deleteFromEnd();
-        d_list.deleteFromEnd();
+
 
     }
 }

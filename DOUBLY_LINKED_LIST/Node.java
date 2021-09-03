@@ -2,7 +2,7 @@ package DOUBLY_LINKED_LIST;
 
 public class Node {
 
-    int data;
-    Node next;
-    Node previous;
+    int data;  //data in the node
+    Node next;  //value of next node
+    Node previous; //value of previous node
 }
