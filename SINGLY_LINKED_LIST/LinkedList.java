@@ -145,7 +145,7 @@ else
 
 //  DELETION
 
-    //      1) from last position
+    //      1) delete from last position
     public void deleteFromEnd() {
 
         if(node_count>0) //condition to check that nodes are present in the list and it is not empty
@@ -197,7 +197,7 @@ else
 
 
 
-//    // 2)from Oth position(i.e start )
+//    // 2)delete from Oth position(i.e start )
 
     public void deleteFromStart() {
         if (node_count > 0) {
@@ -240,7 +240,7 @@ else
 
 
 //
-//    //    3) from any specific index;
+//    //    3) delete from any specific index;
 //
     public void deleteAtIndex(int index) {
 
@@ -292,7 +292,7 @@ else{
         public void show() {
 
             if (head == null && tail == null) {
-                System.out.println("LIST EMPTIED");
+                System.out.println("EMPTY LIST");
             } else {
                 Node temp = head;
                 while (temp.next != null) {
