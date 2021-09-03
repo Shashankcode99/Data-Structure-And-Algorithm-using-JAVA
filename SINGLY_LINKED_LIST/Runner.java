@@ -4,22 +4,25 @@ public class Runner {
 
     public static void main(String[] args) {
         LinkedList list=new LinkedList();
-        list.insert(5);
-        list.insert(10);
-        list.insert(15);
-        list.insert(20);
-        list.insertAtStart(100);
-        list.insertAtStart(250);
-        list.insertAtStart(500);
-        list.insertAtIndex(2,99);
-        list.insertAtIndex(5,999);
-        list.insertAtIndex(0,9999);
+        list.insertAtEnd(4);
+        list.insertAtEnd(5);
+        list.insertAtEnd(6);
+        list.insertAtStart(2);
+        list.insertAtStart(1);
+        list.insertAtIndex(0,0);
+        list.insertAtIndex(6,7);
+        list.insertAtIndex(3,3);
+        list.insertAtIndex(-2,100000);
+        list.insertAtIndex(8,8);
+        list.insertAtIndex(10,99);
 
-        list.deleteAtIndex(3);
-        list.deleteAtStart();
-        list.delete_last();
-        list.delete_last();
+        list.deleteFromEnd();
+        list.deleteFromEnd();
+        list.deleteFromStart();
+        list.deleteFromStart();
+        list.deleteAtIndex(1);
+        list.deleteAtIndex(-3);
+        list.deleteAtIndex(7);
 
-        list.show();
     }
 }
