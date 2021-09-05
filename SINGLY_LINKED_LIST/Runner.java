@@ -20,7 +20,6 @@ public class Runner {
         list.deleteFromEnd();
         list.deleteFromStart();
         list.deleteFromStart();
-        list.deleteAtIndex(1);
         list.deleteAtIndex(-3);
         list.deleteAtIndex(7);
 

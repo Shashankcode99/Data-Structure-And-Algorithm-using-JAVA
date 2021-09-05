@@ -60,12 +60,6 @@ public class LinkedList {
             new_node.next = head;
             head = new_node;  //changing head of the list
 
-
-            Node temp = head;
-            while (temp.next != null) {
-                temp = temp.next;
-            }
-            tail = temp;
             node_count++;
         }
             System.out.println("Element inserted at start is: " + new_node.data);
@@ -106,16 +100,6 @@ if(index>=0 && index<=node_count) /* condition to check index lie between the
         node_count++;
 
 
-//        traversing to determine head and tail of linked list and printing it
-//        with thr help of function "print_head_tail"
-
-        Node temp2 = head;
-        while (temp2.next != null) {
-            temp2 = temp2.next;
-        }
-        tail = temp2;
-
-
         System.out.println("Element inserted is: " + new_node.data);
         System.out.print("List is as follows: ");
         show();
@@ -154,10 +138,10 @@ else
 
             if (tail==head) {
                 head = null;
-               tail=null;
+                tail=null;
                node_count--;
-                System.out.println(" DELETED!! Last Element of List ");
-                show();
+               System.out.println(" DELETED!! Last Element of List ");
+               show();
             }
 
             else {
@@ -173,12 +157,6 @@ else
                 System.out.println(" DELETED!! Last Element of List ");
 
 
-//        traversing to determine head as well as of linked list and printing
-//        it with thr help of function "print_head_tail"
-                Node temp2 = head;
-                while (temp2.next != null) {
-                    temp2 = temp2.next;
-                }
 
                 System.out.print("List is as follows: ");
                 show();
@@ -211,20 +189,12 @@ else
 
             else {
               Node temp=head.next;
-              head.next=null;
               head=temp;
 
               node_count--;
               System.out.println(" DELETED!! Starting Element of List ");
 
 
-//        traversing to determine head as well as of linked list and printing
-//        it with thr help of function "print_head_tail"
-                Node temp2 = head;
-                while (temp2.next != null) {
-                    temp2 = temp2.next;
-                }
-                tail=temp2;
                 System.out.print("List is as follows: ");
                 show();
                 System.out.print("\n");
@@ -270,11 +240,6 @@ else
             temp.next = update.next;
              node_count--;
 
-            Node temp2=head;
-            while (temp2.next != null) {
-                temp2 = temp2.next;
-            }
-             tail=temp2;
             System.out.println("DELETED!! Element from index: "+index);
             System.out.print("List is as follows: ");
             show();
@@ -288,7 +253,7 @@ else{
         }
     }
 
-
+//function for printing the list
         public void show() {
 
             if (head == null && tail == null) {
@@ -303,6 +268,7 @@ else{
             }
         }
 
+        //function for printing head and tail of the list
         public void print_head_tail(Node h, Node t)
         {
             System.out.println("Data in Head of the LinkedList is: " + h.data);
