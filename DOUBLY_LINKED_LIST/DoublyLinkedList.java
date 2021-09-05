@@ -55,15 +55,15 @@ public class DoublyLinkedList {
             head.previous = new_node;
             new_node.next = head;
             head = new_node;
-
-
             node_count++;
+        }
+
             System.out.println("Element inserted is: " + new_node.data);
             System.out.print("List is as follows: ");
             show();
             System.out.print("\n");
             print_head_tail(head, tail);
-        }
+
     }
 
     // 3.  Inserting nodes at any index
@@ -86,9 +86,12 @@ public class DoublyLinkedList {
                 for (int i = 0; i < index - 1; i++) {
                     temp = temp.next;
                 }
-                new_node.previous = temp;
-                new_node.next = temp.next;
-                temp.next = new_node;
+                new_node.previous = temp;   //assigning previous pointer of new node
+                new_node.next = temp.next;  //assigning next pointer of new node
+                temp.next = new_node;       //updating previous elements next pointer with the address of new node
+
+                Node prev_update=new_node.next; //updating the next element's previous pointer with the address of new node
+                prev_update.previous=new_node;
                 node_count++;
 
                 System.out.println("Element inserted is: " + new_node.data);
