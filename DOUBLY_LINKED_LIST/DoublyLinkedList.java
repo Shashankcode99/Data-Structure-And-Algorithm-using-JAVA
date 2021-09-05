@@ -56,11 +56,7 @@ public class DoublyLinkedList {
             new_node.next = head;
             head = new_node;
 
-            Node temp = head;
-            while (temp.next != null) {
-                temp = temp.next;
-            }
-            tail = temp;
+
             node_count++;
             System.out.println("Element inserted is: " + new_node.data);
             System.out.print("List is as follows: ");
@@ -95,11 +91,6 @@ public class DoublyLinkedList {
                 temp.next = new_node;
                 node_count++;
 
-                Node temp2 = head;
-                while (temp2.next != null) {
-                    temp2 = temp2.next;
-                }
-                tail = temp2;
                 System.out.println("Element inserted is: " + new_node.data);
                 System.out.print("List is as follows: ");
                 show();
@@ -150,13 +141,6 @@ public class DoublyLinkedList {
                 System.out.println(" DELETED!! Last Element of List ");
 
 
-//        traversing to determine head as well as of linked list and printing
-//        it with thr help of function "print_head_tail"
-               Node temp2 = head;
-                while (temp2.next != null) {
-                    temp2 = temp2.next;
-                }
-
                 System.out.print("List is as follows: ");
                 show();
                 System.out.print("\n");
@@ -193,13 +177,6 @@ public class DoublyLinkedList {
                 System.out.println(" DELETED!! Starting Element of List ");
 
 
-//        traversing to determine head as well as of linked list and printing
-//        it with thr help of function "print_head_tail"
-                Node temp2 = head;
-                while (temp2.next != null) {
-                    temp2 = temp2.next;
-                }
-                tail=temp2;
                 System.out.print("List is as follows: ");
                 show();
                 System.out.print("\n");
@@ -247,11 +224,6 @@ public class DoublyLinkedList {
 
                 node_count--;
 
-               Node temp2=head;
-                while (temp2.next != null) {
-                    temp2 = temp2.next;
-                }
-                tail=temp2;
                 System.out.println("DELETED!! Element from index: "+index);
                 System.out.print("List is as follows: ");
                 show();
@@ -280,6 +252,7 @@ public class DoublyLinkedList {
             }
 
         }
+
             public void print_head_tail (Node h, Node t)
             {
                 System.out.println("Data in Head of the LinkedList is: " + h.data);
