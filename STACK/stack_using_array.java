@@ -3,31 +3,6 @@ import java.util.*;
 
     public class stack_using_array {
 
-        public static void main(String[] args) {
-
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter the maximum size of the STACK");
-            int max_size = sc.nextInt();
-
-            int[] arr = new int[max_size]; //defining array for stack implementation
-
-
-            stack_using_array obj=new stack_using_array(max_size,arr);
-            obj.push(17);
-            obj.push(18);
-            obj.push(19);
-            obj.push(20);
-            obj.push(21);
-
-            obj.pop();
-            obj.pop();
-            obj.pop();
-            obj.pop();
-            obj.pop();
-            obj.pop();
-
-        }
-
         int i=0;
         int top=-1;
         int max_elements;
@@ -123,4 +98,30 @@ import java.util.*;
             System.out.println();
         }
 
+
+
+        public static void main(String[] args) {
+
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the maximum size of the STACK");
+            int max_size = sc.nextInt();
+
+            int[] arr = new int[max_size]; //defining array for stack implementation
+
+
+            stack_using_array obj=new stack_using_array(max_size,arr);
+            obj.push(17);
+            obj.push(18);
+            obj.push(19);
+            obj.push(20);
+            obj.push(21);
+
+            obj.pop();
+            obj.pop();
+            obj.pop();
+            obj.pop();
+            obj.pop();
+            obj.pop();
+
+        }
     }
